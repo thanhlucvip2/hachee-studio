@@ -3,7 +3,6 @@ import { GetStaticProps } from "next";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import axios from "axios";
-import locate from "../i18n/en.json";
 
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
@@ -220,7 +219,7 @@ export const getStaticProps: GetStaticProps = async ({ locale }) => {
   //     },
   //   ];
   // });
-  console.log(locale)
+  console.log(locale);
   return {
     props: {
       messages: {

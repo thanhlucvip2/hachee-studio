@@ -159,7 +159,7 @@ export default function SearchForm() {
                             "repeat( auto-fit, minmax(120px, 170px) )",
                         }}
                       >
-                        {searchItems.map((item) => (
+                        {searchItems && searchItems.map((item) => (
                           <Card key={item.id} item={item} />
                         ))}
                       </div>

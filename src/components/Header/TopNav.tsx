@@ -7,11 +7,13 @@ import InstagramLogo from "../../../public/icons/InstagramLogo";
 import FacebookLogo from "../../../public/icons/FacebookLogo";
 import DownArrow from "../../../public/icons/DownArrow";
 import styles from "./Header.module.css";
+import { ReactNode } from "react";
 
 type LinkProps = {
   href: string;
   locale: "en" | "my";
   active: boolean;
+  children?: ReactNode;
 };
 
 const MyLink: React.FC<LinkProps> = ({
