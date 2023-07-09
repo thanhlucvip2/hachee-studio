@@ -16,9 +16,9 @@ import { Autoplay, Navigation, Pagination } from "swiper/modules";
 const sliders = [
   {
     id: 2,
-    image: "/bg-img/curly_hair_girl-1.jpg",
-    imageTablet: "/bg-img/curly_hair_girl-1-tablet.png",
-    imageMobile: "/bg-img/curly_hair_girl-1_mobile.jpg",
+    image: "/b3.png",
+    imageTablet: "/b3.png",
+    imageMobile: "/b3.png",
     subtitle: "50% off",
     titleUp: "New Cocktail",
     titleDown: "Dresses",
@@ -26,9 +26,9 @@ const sliders = [
   },
   {
     id: 1,
-    image: "/bg-img/curly_hair_white-1.jpg",
-    imageTablet: "/bg-img/curly_hair_white-1-tablet.png",
-    imageMobile: "/bg-img/curly_hair_white-1_mobile.jpg",
+    image: "/b2.png",
+    imageTablet: "/b2.png",
+    imageMobile: "/b2.png",
     subtitle: "Spring Revolution",
     titleUp: "Night Summer",
     titleDown: "Dresses",
@@ -36,9 +36,9 @@ const sliders = [
   },
   {
     id: 3,
-    image: "/bg-img/monigote.jpg",
-    imageTablet: "/bg-img/monigote-tablet.png",
-    imageMobile: "/bg-img/monigote_mobile.jpg",
+    image: "/b1.png",
+    imageTablet: "/b1.png",
+    imageMobile: "/b1.png",
     subtitle: "Spring promo",
     titleUp: "The Weekend",
     titleDown: "Promotions",
@@ -69,7 +69,7 @@ const Slideshow = () => {
         >
           {sliders.map((slider) => (
             <SwiperSlide key={slider.id}>
-              <div className="box-img hidden lg:block">
+              <div className="hidden lg:block">
                 <Image
                   src={slider.image}
                   width={1144}
@@ -84,6 +84,7 @@ const Slideshow = () => {
                   width={820}
                   height={720}
                   alt={"some name"}
+                  className="w-full"
                 />
               </div>
               <div className="sm:hidden">
@@ -92,6 +93,8 @@ const Slideshow = () => {
                   width={428}
                   height={800}
                   alt={"some name"}
+                  className="w-full"
+                  priority
                 />
               </div>
               <div

@@ -18,7 +18,3 @@
 .arrows {
   @apply w-8 h-8 absolute cursor-pointer flex justify-center items-center bg-gray300 rounded-full opacity-60 hover:opacity-100;
 }
-
-.box-img > img {
-  width: 100%;
-}

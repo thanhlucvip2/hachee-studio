@@ -81,7 +81,7 @@ const Header: React.FC<Props> = ({ title }) => {
       <nav
         className={`${
           scrolled ? "bg-white sticky top-0 shadow-md z-50" : "bg-transparent"
-        } w-full z-50 h-20 relative`}
+        } w-full z-50 h-20 relative backdrop-blur-sm bg-white/30`}
       >
         <div className="app-max-width w-full">
           <div
@@ -118,16 +118,15 @@ const Header: React.FC<Props> = ({ title }) => {
 
             {/* Haru Logo */}
             <div className="flex-1 flex justify-center items-center cursor-pointer">
-              <div className="w-32 h-auto">
+              <div className="h-auto">
                 <Link legacyBehavior href="/">
                   <a>
                     <Image
                       className="justify-center"
-                      src="/logo.svg"
+                      src="/logo.png"
                       alt="Picture of the author"
-                      width={220}
-                      height={50}
-                     
+                      width={300}
+                      height={100}
                     />
                   </a>
                 </Link>
